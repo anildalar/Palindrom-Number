@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Number</title>
+    </head>
+    <body>
+        
+
+        
+        <script>
+
+            //1. Function defination
+            function checkForPalindrom(n){ //number is formal arg/parameter
+                //function body
+                //string.lengtg
+                //alert(n.length);
+
+                //alert(n.charAt(0));
+                // 3663
+                var isPalindrom = false;
+
+                for(j=(n.length-1);j>=0;j--){
+                    console.log(n.charAt(j));
+
+                    for(var i=0; i<n.length;i++ ){
+                        console.log( n.charAt(i));
+                        
+                        if( n.charAt(j) == n.charAt(i)  ){
+                            isPalindrom = true;
+                        }else{
+                            isPalindrom = false;
+                        }
+                    }
+
+                }
+
+                if(isPalindrom == true){
+                    alert(n +" is a palindrome number");
+                }else{
+                    alert(n +" is not a palindrome number");
+                }
+              
+
+            }
+
+            let number = prompt('Please Enter the number to check if it is palindrom or not?');
+
+            //Conver the string to number
+            //number = parseInt(number);//
+
+            // String Int Number ---> ParseInt ----> Integer
+            //  '6336'+10 ==>  633610
+            //  parseInt('6336') => 6336 +10 => 6346
+            //alert(number+10);
+
+            //2. Function Calling
+            checkForPalindrom(number);
+
+        
+
+        </script>
+    </body>
+</html>
